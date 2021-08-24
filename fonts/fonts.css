@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    src: url("NeueHaasDisplayRoman.eot?#iefix") format("embedded-opentype"),
+    url("NeueHaasDisplayRoman.woff") format("woff"),
+    url("NeueHaasDisplayRomanwoff2") format("woff2"),
+    url("NeueHaasDisplayRoman.ttf") format("truetype"),
+    url('NeueHaasDisplayRoman.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Euclid Circular B";
+    src: url("EuclidCircularBRegular.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularBRegular.woff") format("woff"),
+    url("EuclidCircularBRegular.woff2") format("woff2"),
+    url("EuclidCircularBRegular.ttf") format("truetype"),
+    url('EuclidCircularBRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Euclid Circular B";
+    src: url("EuclidCircularBMedium.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularBMedium.woff") format("woff"),
+    url("EuclidCircularBMedium.woff2") format("woff2"),
+    url("EuclidCircularBMedium.ttf") format("truetype"),
+    url('EuclidCircularBMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("InterMedium.eot?#iefix") format("embedded-opentype"),
+    url("InterMedium.woff") format("woff"),
+    url("InterMedium.woff2") format("woff2"),
+    url("InterMedium.ttf") format("truetype"),
+    url('InterMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("GothamRegular.eot?#iefix") format("embedded-opentype"),
+    url("GothamRegular.woff") format("woff"),
+    url("GothamRegular.woff2") format("woff2"),
+    url("GothamRegular.ttf") format("truetype"),
+    url('GothamRegular.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}

@@ -1,0 +1,168 @@
+@import 'responsive.sсss';
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #323232;
+	font-weight: normal;
+	text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.svg-about {
+	position: absolute;
+	height: 0px;
+}
+	
+.container {
+	max-width: 1248px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	border-radius: 0px;
+	border-bottom: 1px solid #fff;
+	padding-top: 4px;	
+	padding-bottom: 14px;
+	font-family: Euclid Circular B;
+	transition: 0.3s border;
+	&--area {
+		min-height: 115px;
+		resize: vertical;
+	}
+	&:focus {
+		border-color: #f34841;
+	}
+}
+
+.btn {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	line-height: 1.2;
+	color: #fff;
+	letter-spacing: 0.03em;
+	border: none;
+	outline: none;
+	border-radius: 1px;
+	text-transform: uppercase;
+	padding: 15px;
+	font-weight: 500;
+	transition: 0.3s background-color, 0.3s color;
+	&--send {
+		position: relative;
+		font-size: 14px;
+		max-width: 224px;
+		background-color: #f34841;
+		text-align: left;
+		padding: 20px;
+		padding-left: 24px;
+		padding-right: 18px;
+		margin-bottom: 16px;
+		background-image: url(../img/arrow_btn.svg);
+		background-repeat: no-repeat;
+		background-position: right 20px center;
+		background-size: 12px;
+		font-family: Inter;
+
+		@include media(sm) {
+			order: -1;
+		}
+		&:hover {
+			background-color: #bf3834;
+		}
+	}
+
+	&--login {
+		max-width: 144px;
+		font-size: 13px;
+		background-color: transparent;
+		border-left: 1px solid rgba(255, 255, 255, 0.16);
+		border-right: 1px solid rgba(255, 255, 255, 0.16);
+		text-transform: uppercase;
+		text-align: center;
+		font-family: Euclid Circular B;
+		@include media(sm) {
+			display: none;
+		}
+		&:hover {
+			color: #f34841;
+		}
+	}
+
+	&--menu {
+		display: none;
+		background-image: url(../img/icons/burger.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		cursor: pointer;
+		display: none;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		padding: 0px;
+		@include media(sm) {
+			display: block;
+		}
+	}
+
+	&--open {
+		background-image: none;
+		&:after,
+		&:before {
+			position: absolute;
+			top: 0px;
+			left: 9px;
+			content: ' ';
+			height: 20px;
+			width: 2px;
+			background-color: #fff;
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.widthBlur {
+	 filter: blur(5px);
+    cursor: no-drop;
+}
+
+@import 'reset';
+@import 'header';	
+@import 'footer';
+@import 'contacts';

@@ -1,0 +1,249 @@
+@import 'responsive.sсss';
+
+.contacts {
+	background-color: #121212;
+	
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding-top: 100px;
+		width: 50%;
+		padding-bottom: 84px;
+		@include media(md) {
+			width: 100%;
+		}
+		&--content {
+			background-image: url(../img/decor-contacts.svg);
+			background-repeat: no-repeat;
+			background-position: right 38px bottom -200px;
+			border-right: 1px solid rgba(255, 255, 255, 0.16);
+			@include media(mdx) {
+				background-position: right 28px bottom -200px;
+			}
+			@include media(md) {
+				background-image: none;
+				border-right: 0px;
+				padding-top: 40px;
+				padding-bottom: 0px;
+			}
+		}
+
+		&--block {
+			padding-left: 71px;
+			@include media(lgxs) {
+				padding-left: 40px;
+			}
+			@include media(md) {
+				padding-left: 0px;
+				padding-top: 40px;
+				padding-bottom: 32px;
+			}
+		}
+	}
+
+	&__holder {
+		position: relative;
+		padding-right: 71px;
+		@include media(lgxs) {
+			padding-right: 40px;
+		}
+		@include media(md) {
+			padding-right: 0px;
+		}
+		&:after {
+			position: absolute;
+			content: ' ';
+			left: -100%;
+			bottom: -1px;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(255, 255, 255, 0.16);
+			@include media(md) {
+				display: none;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 48px;
+		line-height: 1;
+		color: #fff;
+		text-transform: uppercase;
+		margin-bottom: 32px;
+		font-family: Neue Haas Grotesk Display Pro;
+		font-weight: 500;
+		@include media(lgs) {
+			font-size: 40px;
+		}	
+		@include media(lgxs) {
+			font-size: 35px;
+		}	
+		@include media(md) {
+			font-size: 30px;
+		}	
+		@include media(smdx) {
+			font-size: 24px;
+			margin-bottom: 24px;
+		}	
+		span {
+			position: relative;
+			display: block;
+			color: rgba(255, 255, 255, 0.7);
+			&:before {
+				content: '/';
+				color: #f34841;
+				padding-right: 30px;
+				@include media(sm) {
+					padding-right: 15px;
+				}	
+			}
+		}
+	}
+
+	&__text {
+		padding-bottom: 88px;
+		max-width: 280px;
+		@include media(md) {
+			padding-bottom: 32px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.44;	
+			color: rgba(255, 255, 255, 0.7);
+			font-family: Euclid Circular B;
+			@include media(mdx) {
+				font-size: 17px;
+			}
+			@include media(smdx) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__info {
+		padding-top: 110px;
+		border-top: 1px solid rgba(255, 255, 255, 0.16);
+		@include media(md) {
+			padding-top: 0px;
+			padding-bottom: 40px;
+			border: none;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+		}
+	}
+
+	&__subtitle {
+		font-size: 13px;
+		line-height: 1.2;
+		color: rgba(255, 255, 255, 0.3);
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		margin-bottom: 15px;
+		font-family: Euclid Circular B;
+		@include media(smdx) {
+			font-size: 12px;
+		}
+	}
+
+	&__phone {
+		display: inline-block;
+		font-size: 32px;
+		line-height: 1;
+		color: #fff;
+		font-family: Neue Haas Grotesk Display Pro;
+		font-weight: 500;
+		transition: 0.3s color;
+		@include media(lgxs) {
+			font-size: 28px;
+		}
+		@include media(smdx) {
+			font-size: 24px;
+		}
+		&:hover {
+			color: #f34841;
+		}
+	}
+
+	&__box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 48px;
+		@include media(md) {
+			margin-bottom: 32px;
+		}
+		&:first-child {
+			margin-bottom: 40px;
+			@include media(md) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	&__label {
+		display: inline-block;
+		user-select: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		order: -1;
+		font-size: 18px;
+		line-height: 1.4;
+		color: rgba(255, 255, 255, 0.4);
+		font-family: Euclid Circular B;
+		transition: 0.3s top, 0.3s label;
+		@include media(md) {
+			font-size: 16px;
+		}
+		&--active {
+			font-size: 14px;
+			top: -20px;
+			@include media(md) {
+				font-size: 13px;
+			}
+		} 
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		padding-top: 12px;
+		@include media(sm) {
+			flex-direction: column;
+			align-items: flex-start;
+			padding-top: 8px;
+		}
+	}
+
+	&__desc {
+		margin-right: 40px;
+		margin-bottom: 16px;
+		p {
+			font-size: 14px;
+			line-height: 1.29;
+			color: rgba(255, 255, 255, 0.4);
+			font-family: Euclid Circular B;
+		}
+		a {
+			display: inline-block;
+			font-size: 14px;
+			position: relative;
+			color: rgba(255, 255, 255, 0.4);
+			&:after {
+				position: absolute;
+				content: ' ';
+				left: 0px;
+				bottom: -1px;
+				width: 100%;
+				height: 1px;
+				background-color: rgba(255, 255, 255, 0.4);
+				transition: 0.5s width;
+			}
+			&:hover:after {
+				width: 0px;
+			}
+		}
+	}
+}
